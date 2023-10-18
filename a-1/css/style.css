@@ -70,3 +70,31 @@ body {
     background-color: #666;
     color: #fff;
 }
+
+.slider {
+    position: relative;
+    height: 300px;
+}
+
+.slides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+.slide {
+    position: relative;
+}
+
+.slide h2 {
+    font-size: 60px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-shadow: 8px 8px 10px rgba(0,0,0,0.8);
+}
