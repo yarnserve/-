@@ -30,6 +30,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 1;
+    position: relative;
 }
 
 .gnb {
@@ -74,6 +76,7 @@ body {
 .slider {
     position: relative;
     height: 300px;
+    overflow: hidden;
 }
 
 .slides {
@@ -81,6 +84,7 @@ body {
     top: 0;
     left: 0;
     display: flex;
+    flex-direction: column;
 }
 
 .slide {
@@ -151,6 +155,23 @@ body {
 
 
 .tab .gallery_list {
+    display: none;
+}
+
+.tab .gallery_list li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.tab .gallery_list li:last-child {
+    margin-right: 0;
+}
+
+.tab .gallery_list li img{
+    width: 110px;
+}
+
+.item {
     display: none;
 }
 
