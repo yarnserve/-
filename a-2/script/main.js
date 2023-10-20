@@ -3,11 +3,11 @@ $(function(){
     $('.gnb').hover(
         function(){
             $('.header').addClass('active')
-            $(this).find('ul').slideDown('fast')
+            $(this).find('ul').stop().slideDown('fast')
         },
         function(){
             $('.header').removeClass('active')
-            $(this).find('ul').slideUp('fast')
+            $(this).find('ul').stop().slideUp('fast')
         },
     )
 
