@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link rel="stylesheet" href="./css/test.css">
+    <script src="./script/jquery-1.12.4.js"></script>
+</head>
+<body>
+    <h1 class="title">안녕하세요.</h1>   
+    
+    <div class="bar">이것은 막대기 입니다.</div>
+
+    <script>
+        $('.bar').hover(
+            function(){
+                $(this).addClass('active')
+            },
+            function(){
+                $(this).removeClass('active')
+            }
+        )
+    </script>
+</body>
+</html>

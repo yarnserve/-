@@ -1,0 +1,44 @@
+.title {
+    font-size: 50px;
+    position: relative;
+    padding-left: 30px;
+}
+
+.title::before {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: orangered;
+    border-radius: 100%;
+}
+
+.title::after {
+    /* content: 'css'; */
+}
+
+.bar {
+    background-color: #eee;
+    position: relative;
+    width: 500px;
+    height: 50px;
+    line-height: 50px;
+    box-sizing: border-box;
+}
+
+.bar::after {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: orangered;
+    height: 0;
+    transition: all 0.3s;
+}
+
+.bar.active::after {
+    height: 200px;
+}
