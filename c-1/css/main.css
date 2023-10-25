@@ -36,7 +36,9 @@ body {
     display: block;
 }
 
-.gnb {}
+.gnb {
+    padding: 10px;
+}
 
 .gnb > li {
     border-bottom: 1px solid #999;
