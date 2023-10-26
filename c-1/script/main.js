@@ -1,16 +1,17 @@
 $(function(){
     // 슬라이드
     var slide = $('.slide')    
-    var current = 0    
-    slide.eq(current).show()
+    var current = 0
+    slide.eq(0).show()
 
     setInterval(function(){
         var next = (current + 1) % slide.length            
 
         slide.eq(current).fadeOut()
         slide.eq(next).fadeIn()
+        console.log(current, next)
         current = next
-    }, 3000)   
+    }, 2000)   
 
 
     // 메뉴
